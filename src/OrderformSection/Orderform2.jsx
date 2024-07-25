@@ -40,8 +40,9 @@ const [clickedIndex, setClickedIndex] = useState(null);
             onChange={(e) => {
               setDetails({ ...details, name: e.target.value })
               setFormTWOValid({...is_F2_Invalide, name: false})
+              
             }} 
-            className={` my-1 border-2 rounded-xl text-lg ${is_F2_Invalide.name ? ' bg-red-100 outline-red-600 border-red-600 outline-[1px]':''}  p-2 hover:border-mypurple md:w-[80%] `}
+            className={` md:my-1 border md:border-2 rounded-xl md:text-lg ${is_F2_Invalide.name ? ' bg-red-100 outline-red-600 border-red-600 outline-[1px]':''}  p-2 hover:border-mypurple md:w-[80%] `}
           />
           <input
             id="Phone"
@@ -53,10 +54,10 @@ const [clickedIndex, setClickedIndex] = useState(null);
               setDetails({ ...details, phone: e.target.value })
               setFormTWOValid({...is_F2_Invalide, phone: false})
             }} 
-            className={` my-1 border-2 rounded-xl text-lg ${is_F2_Invalide.phone
+            className={`  md:my-1 border rounded-xl md:text-lg ${is_F2_Invalide.phone
                      ? ' bg-red-100 outline-red-600 border-red-600 outline-[1px]':''}  p-2 hover:border-mypurple md:w-[80%] `}
           />
-          <p className=" mx-2 text-sm text-slate-400 text-left">
+          <p className=" mx-2 text-xs md:text-sm text-slate-400 text-left">
             we’ll call this number to coordinate delivery
           </p>
           <h1 className=" text-zinc-700 text-left text-xl font-semibold py-2">
@@ -100,7 +101,7 @@ const [clickedIndex, setClickedIndex] = useState(null);
               setDetails({ ...details, flat: e.target.value })
               setFormTWOValid({...is_F2_Invalide, flat: false})
             }}            placeholder="Flat, housing no, building, appartment."
-            className={` my-1 border-2 rounded-xl text-lg ${is_F2_Invalide.flat
+            className={`  md:my-1 border rounded-xl md:text-lg ${is_F2_Invalide.flat
                      ? ' bg-red-100 outline-red-600 border-red-600 outline-[1px]':''} p-2 hover:border-mypurple md:w-[80%] `}
           />
           <input
@@ -111,7 +112,7 @@ const [clickedIndex, setClickedIndex] = useState(null);
             onChange={(e) => {
               setDetails({ ...details, street: e.target.value })
               setFormTWOValid({...is_F2_Invalide, street: false})
-            }}            className={` my-1 border-2 rounded-xl text-lg ${is_F2_Invalide.street
+            }}            className={`  md:my-1 border rounded-xl md:text-lg ${is_F2_Invalide.street
                      ? ' bg-red-100 outline-red-600 border-red-600 outline-[1px]':''} p-2 hover:border-mypurple md:w-[80%] `}
           />
           <input
@@ -123,7 +124,7 @@ const [clickedIndex, setClickedIndex] = useState(null);
             onChange={(e) => {
               setDetails({ ...details, pin: e.target.value })
               setFormTWOValid({...is_F2_Invalide, pin: false})
-            }}            className={` my-1 border-2 rounded-xl text-lg ${is_F2_Invalide.pin
+            }}            className={`  md:my-1 border rounded-xl md:text-lg ${is_F2_Invalide.pin
                      ? ' bg-red-100 outline-red-600 border-red-600 outline-[1px]':''} p-2 hover:border-mypurple md:w-[80%] `}
           />
           <div className=" flex w-full md:w-[80%] gap-2 ">
@@ -136,8 +137,8 @@ const [clickedIndex, setClickedIndex] = useState(null);
               setDetails({ ...details, district: e.target.value })
               setFormTWOValid({...is_F2_Invalide, district: false})
             }}
-            className={` my-1 border-2 rounded-xl ${is_F2_Invalide.district
-                     ? ' bg-red-100 outline-red-600 border-red-600 outline-[1px]':''} text-lg p-2 hover:border-mypurple w-[50%] `}
+            className={`  md:my-1 border rounded-xl ${is_F2_Invalide.district
+                     ? ' bg-red-100 outline-red-600 border-red-600 outline-[1px]':''} md:text-lg p-2 hover:border-mypurple w-[50%] `}
           /><input
           id="Name"
           type="text"
@@ -147,8 +148,8 @@ const [clickedIndex, setClickedIndex] = useState(null);
               setDetails({ ...details, state: e.target.value })
               setFormTWOValid({...is_F2_Invalide, state: false})
             }}
-          className={` my-1 border-2 rounded-xl ${is_F2_Invalide.state
-                     ? ' bg-red-100 outline-red-600 border-red-600 outline-[1px]':''} text-lg p-2 hover:border-mypurple w-[50%] `}
+          className={`  md:my-1 border rounded-xl ${is_F2_Invalide.state
+                     ? ' bg-red-100 outline-red-600 border-red-600 outline-[1px]':''} md:text-lg p-2 hover:border-mypurple w-[50%] `}
         />
           </div>
         

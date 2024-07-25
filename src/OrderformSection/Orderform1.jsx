@@ -51,7 +51,7 @@ function Orderform1() {
           ))}
         </div>
         {/* Orientation details */}
-        <div className="flex items-center mt-6">
+        <div className="flex items-center md:mt-6">
           <img src={orient} className="w-6 h-6 mr-2" alt="Orientation" />
           <h1 className="text-zinc-700 text-left text-xl font-semibold py-2">Orientation</h1>
         </div>
@@ -71,7 +71,7 @@ function Orderform1() {
           ))}
         </div>
         {/* Artist signature */}
-        <div id="signature" className="flex items-center">
+        <div id="signature" className="flex items-center -translate-x-4 ">
           <Switch
             className="my-4 scale-75"
             checked={details.signature}
