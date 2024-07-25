@@ -8,6 +8,8 @@ export default {
     extend: {
       colors: {
         'mypurple': '#6200EA',
+        'error': '#ef4444',
+        'bgerror': '#fecaca',
       },
     },
   },

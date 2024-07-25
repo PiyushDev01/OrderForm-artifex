@@ -67,10 +67,15 @@ const [clickedIndex, setClickedIndex] = useState(null);
               return (
                 <h1
                   key={index}
-                  className={`font-semibold text-left  rounded-xl ${is_F2_Invalide.saveas
-                     ? ' bg-red-200 outline-red-600 border-red-600 outline-[1px]':'bg-slate-50'} border-[2px] cursor-pointer border-gray-500 
-                    outline outline-transparent 
-                    hover: bg-slate-200 text-xs md:text-base ${clickedIndex === index || details.saveas===item  ? 'bg-gray-300 outline-purple-600 outline-[2px]' : 'bg-slate-50'} py-1 px-4`}
+                  className={`font-semibold text-left rounded-xl border-[2px] cursor-pointer outline outline-transparent text-xs md:text-base py-1 px-4 ${
+                    is_F2_Invalide.saveas
+                      ? "bg-red-200 border-red-500"
+                      : "bg-slate-50"
+                  }  border-gray-500 outline-[1px] hover:bg-slate-200 ${
+                    clickedIndex === index || details.saveas === item
+                      ? "bg-gray-200 border-purple-500 outline-purple-500"
+                      : " "
+                  }`}
                     onClick={() => {
         
                         setDetails({ ...details, saveas: item }); 

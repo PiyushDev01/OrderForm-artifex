@@ -40,17 +40,15 @@ function Orderform1() {
               return (
                 <h1
                   key={index}
-                  className={`font-semibold text-left bg-slate-50 rounded-xl ${
+                  className={`font-semibold text-left rounded-xl border-[2px] cursor-pointer outline outline-transparent text-xs md:text-base py-1 px-4 ${
                     is_F1_Invalide.size
-                      ? " bg-red-300 outline-red-600 border-red-600 outline-[1px]"
-                      : ""
-                  }  border-[2px] cursor-pointer border-gray-500 
-                        outline outline-transparent 
-                        hover:bg-slate-200 text-xs md:text-base  ${
-                          clickedIndex === index || details.size === item
-                            ? "bg-gray-300 outline-purple-600 outline-[2px]"
-                            : ""
-                        } py-1 px-4`}
+                      ? "bg-red-200 border-red-500"
+                      : "bg-slate-50"
+                  }  border-gray-500 outline-[1px] hover:bg-slate-200 ${
+                    clickedIndex === index || details.size === item
+                      ? "bg-gray-200 border-purple-500 outline-purple-500"
+                      : " "
+                  }`}
                   onClick={() => {
                     setDetails({ ...details, size: item });
                     setClickedIndex(index);
@@ -76,12 +74,12 @@ function Orderform1() {
                   key={index}
                   className={`font-semibold text-left rounded-xl border-[2px] cursor-pointer outline outline-transparent text-xs md:text-base py-1 px-4 ${
                     is_F1_Invalide.orientation
-                      ? "bg-red-300 outline-red-500 border-red-500 outline-[1px]"
-                      : ""
-                  } bg-slate-50 border-gray-500  ${
+                      ? "bg-red-200 border-red-500"
+                      : "bg-slate-50"
+                  }  border-gray-500 outline-[1px] hover:bg-slate-200 ${
                     clickedpos === index || details.orientation === item
-                      ? "bg-gray-300 outline-purple-600 outline-[2px]"
-                      : "hover:bg-slate-200 "
+                      ? "bg-gray-200 border-purple-500 outline-purple-500"
+                      : " "
                   }`}
                   
                   onClick={() => {
