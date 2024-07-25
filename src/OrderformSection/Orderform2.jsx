@@ -70,7 +70,7 @@ const [clickedIndex, setClickedIndex] = useState(null);
                   className={`font-semibold text-left  rounded-xl ${is_F2_Invalide.saveas
                      ? ' bg-red-200 outline-red-600 border-red-600 outline-[1px]':'bg-slate-50'} border-[2px] cursor-pointer border-gray-500 
                     outline outline-transparent 
-                    hover: bg-slate-200 text-xs md:text-base ${clickedIndex === index || details.saveas===item  ? 'bg-gray-200 outline-purple-500 outline-[2px]' : 'bg-slate-50'} py-1 px-4`}
+                    hover: bg-slate-200 text-xs md:text-base ${clickedIndex === index || details.saveas===item  ? 'bg-gray-300 outline-purple-600 outline-[2px]' : 'bg-slate-50'} py-1 px-4`}
                     onClick={() => {
         
                         setDetails({ ...details, saveas: item }); 

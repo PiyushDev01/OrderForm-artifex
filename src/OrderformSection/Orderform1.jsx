@@ -7,6 +7,8 @@ import { useContext, useState } from "react";
 import Detailcontext from "./DetailContext/Detailcontext";
 import Formcontext from "./OrderFormContext/FormContex";
 
+
+
 const size = ["A4", "A5", "A3"];
 const orientation = ["Portrait", "Landscape"];
 
@@ -40,13 +42,13 @@ function Orderform1() {
                   key={index}
                   className={`font-semibold text-left bg-slate-50 rounded-xl ${
                     is_F1_Invalide.size
-                      ? " bg-red-200 outline-red-600 border-red-600 outline-[1px]"
+                      ? " bg-red-300 outline-red-600 border-red-600 outline-[1px]"
                       : ""
                   }  border-[2px] cursor-pointer border-gray-500 
                         outline outline-transparent 
                         hover:bg-slate-200 text-xs md:text-base  ${
                           clickedIndex === index || details.size === item
-                            ? "bg-gray-200 outline-purple-500 outline-[2px]"
+                            ? "bg-gray-300 outline-purple-600 outline-[2px]"
                             : ""
                         } py-1 px-4`}
                   onClick={() => {
@@ -72,17 +74,16 @@ function Orderform1() {
               return (
                 <h1
                   key={index}
-                  className={`font-semibold text-left   ${
+                  className={`font-semibold text-left rounded-xl border-[2px] cursor-pointer outline outline-transparent text-xs md:text-base py-1 px-4 ${
                     is_F1_Invalide.orientation
-                      ? "bg-red-200 outline-red-600 border-red-600 outline-[1px]"
-                      : "bg-slate-50 border-gray-500"
-                  } rounded-xl border-[2px] cursor-pointer  
-                    outline outline-transparent 
-                    hover:bg-slate-200 text-xs md:text-base ${
-                      clickedpos === index || details.orientation === item
-                        ? "bg-gray-200 outline-purple-500 outline-[2px]"
-                        : "bg-slate-50"
-                    } py-1 px-4`}
+                      ? "bg-red-300 outline-red-500 border-red-500 outline-[1px]"
+                      : ""
+                  } bg-slate-50 border-gray-500  ${
+                    clickedpos === index || details.orientation === item
+                      ? "bg-gray-300 outline-purple-600 outline-[2px]"
+                      : "hover:bg-slate-200 "
+                  }`}
+                  
                   onClick={() => {
                     setDetails({ ...details, orientation: item });
                     setClickedpos(index);

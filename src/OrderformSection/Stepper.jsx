@@ -30,12 +30,12 @@ function Stepper() {
             <div
               id="stepno"
               className={`${
-                currentStep > index + 1 ? "bg-gradient-to-br from-[#8E2DE2] to-[#4A00E0] border-0" : "bg-white"
+                currentStep > index + 1 ? " bg-gradient-to-br from-[#8E2DE2] to-[#4A00E0]" : "bg-white"
               } w-8 md:w-8 md:h-8 h-8 rounded-full  ${
-                currentStep >= index + 1
+                currentStep == index + 1
                   ? "border-purple-500 border-4"
-                  : "border-slate-400 border-2"
-              } flex  justify-center text-white font-bold items-center `}
+                  : "border-slate-400 "
+              } flex  justify-center text-white font-bold  items-center `}
             >
               {" "}
               <CheckIcon
