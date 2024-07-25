@@ -40,13 +40,13 @@ function Orderform1() {
               return (
                 <h1
                   key={index}
-                  className={`font-semibold text-left rounded-xl border-[2px] cursor-pointer outline outline-transparent text-xs md:text-base py-1 px-4 ${
+                  className={`font-semibold text-left rounded-xl border-[2px] transition-all cursor-pointer outline outline-transparent text-xs md:text-base py-1 px-4 ${
                     is_F1_Invalide.size
-                      ? "bg-red-200 border-red-500"
+                      ? "bg-[#ffb3b3] border-[#ff3333]"
                       : "bg-slate-50"
                   }  border-gray-500 outline-[1px] hover:bg-slate-200 ${
                     clickedIndex === index || details.size === item
-                      ? "bg-gray-200 border-purple-500 outline-purple-500"
+                      ? "bg-[#acacef] border-[#8533ff] outline-purple-500"
                       : " "
                   }`}
                   onClick={() => {
@@ -74,11 +74,11 @@ function Orderform1() {
                   key={index}
                   className={`font-semibold text-left rounded-xl border-[2px] cursor-pointer outline outline-transparent text-xs md:text-base py-1 px-4 ${
                     is_F1_Invalide.orientation
-                      ? "bg-red-200 border-red-500"
+                      ? "bg-[#ffb3b3] border-[#ff3333]"
                       : "bg-slate-50"
                   }  border-gray-500 outline-[1px] hover:bg-slate-200 ${
                     clickedpos === index || details.orientation === item
-                      ? "bg-gray-200 border-purple-500 outline-purple-500"
+                      ? "bg-[#acacef] border-[#8533ff] outline-purple-500"
                       : " "
                   }`}
                   
